@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="467.0" prefWidth="584.0" spacing="20.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoapp1.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="185.0" prefWidth="801.0" style="-fx-background-color: black; ">
+      <children>
+         <Label layoutX="555.0" layoutY="51.0" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: white;" text="Логин">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="555.0" layoutY="93.0" prefHeight="17.0" prefWidth="83.0" style="-fx-background-color: white;" text="Пароль">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Button layoutX="701.0" layoutY="132.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="25.0" prefWidth="149.0" text="Войти в Бахмут" />
+         <TextField fx:id="loginText" layoutX="701.0" layoutY="52.0" />
+         <PasswordField fx:id="passwordText" layoutX="701.0" layoutY="94.0" />
+      
+                <Label fx:id="welcomeText" layoutX="689.0" layoutY="1.0" prefHeight="45.0" prefWidth="201.0" style="-fx-background-color: red;" text="ЧВК ВАГНЕР">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Label>
+      </children>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></AnchorPane>
+</VBox>
