@@ -5,12 +5,16 @@ import java.util.List;
 
 
 public class DataUsers {
-   public  List<User> data = new ArrayList<>();
+   public static List<User> data = new ArrayList<>();
     {
 
-        User admin = new User("Владимир", "333");
-        User user = new User("Валера", "332");
+        User admin = new User("admin", "1111");
+        User user = new User("user", "2222");
         data.add(admin);
+        data.add(user);
+    }
+    public static void addUser(String login, String pass){
+        User user = new User(login, pass);
         data.add(user);
     }
 

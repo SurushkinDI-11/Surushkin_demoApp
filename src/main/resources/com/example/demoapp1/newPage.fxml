@@ -5,15 +5,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<?import javafx.scene.image.ImageView?>
-<AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoapp1.NewPage">
+<AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #E4B4C2;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoapp1.NewPage">
    <children>
-      <Label layoutX="35.0" layoutY="173.0" prefHeight="76.0" prefWidth="549.0" text="Обратного пути нет" textAlignment="CENTER" textFill="#d70606">
+      <Label fx:id="nameLabel" layoutX="14.0" layoutY="14.0" prefHeight="48.0" prefWidth="163.0" text="С новым годом" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font name="System Bold Italic" size="48.0" />
+            <Font name="System Bold Italic" size="20.0" />
          </font>
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor></Label>
+      <ListView fx:id="notesList" layoutX="14.0" layoutY="62.0" prefHeight="309.0" prefWidth="194.0" />
+      <TextField fx:id="notesText" layoutX="250.0" layoutY="62.0" prefHeight="41.0" prefWidth="200.0" />
+      <Button layoutX="250.0" layoutY="114.0" mnemonicParsing="false" onAction="#add" prefHeight="48.0" prefWidth="91.0" text="add" />
+      <Button layoutX="359.0" layoutY="114.0" mnemonicParsing="false" onAction="#delete" prefHeight="48.0" prefWidth="91.0" text="delete" />
    </children>
 </AnchorPane>
